@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Form</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .form-container{
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 400px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    label{
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+
+    input,
+    select,
+    textarea{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea{
+        resize: vertical;
+    }
+
+    .inline{
+        margin-top: 10px;
+    }
+
+    .inline input{
+        width: auto;
+        margin-right: 5px;
+    }
+
+    button{
+        width: 100%;
+        padding: 12px;
+        margin-top: 15px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover{
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form action="/action.php" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter Password">
+
+        <div class="inline">
+            <input type="checkbox" name="subscribe" value="yes">
+            <label style="display:inline;">Subscribe</label>
+        </div>
+
+        <div class="inline">
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <label>Country:</label>
+        <select name="country">
+            <option value="us">USA</option>
+            <option value="ca">Canada</option>
+        </select>
+
+        <label>Comments:</label>
+        <textarea name="comments" rows="4"></textarea>
+
+        <label>Upload Resume:</label>
+        <input type="file" name="resume">
+
+        <label>Age:</label>
+        <input type="number" name="age" min="18" max="100">
+
+        <label>Volume:</label>
+        <input type="range" name="volume" min="0" max="100">
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Website:</label>
+        <input type="url" name="website">
+
+        <label>Search:</label>
+        <input type="search" name="query">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
