@@ -1,0 +1,14 @@
+/* do the first line large and coloured */
+p::first-line{
+    color:red;
+    font-size: larger;
+}
+/* to do the emoji at 1st and at last */
+p::before{
+    content:"bbb";
+}
+p::after{
+    content:"bbb";
+}
+
+

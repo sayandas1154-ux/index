@@ -1,0 +1,36 @@
+.picture {
+    display: grid;
+     height: 640px;
+    width: 825px;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+    border: solid rgb(217, 210, 210);
+    grid-template-areas: "img-1 img-2 img-3"
+                         "img-1 img-4 img-3"
+                         "img-5 img-4 img-6";
+}
+.a,.b,.c,.d,.e,.f {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    margin: 10px;
+}
+.img-1 {
+    grid-area: img-1;
+}
+.img-2 {
+    grid-area: img-2;
+}
+.img-3 {
+    grid-area: img-3;
+}
+.img-4 {
+    grid-area: img-4;
+}
+.img-5 {
+    grid-area: img-5;
+}
+.img-6 {
+    grid-area: img-6;
+}

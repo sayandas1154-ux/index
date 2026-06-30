@@ -1,0 +1,25 @@
+.btn{
+    border:5px solid green;
+/* to give border */
+/* give shape */
+    hight : 50px;
+    width: 80px;
+/* color background */
+background-color:aqua
+}
+/* show the responce */
+.btn:hover {
+    background-color: purple;
+    color: blue;
+}
+/* show responce on clicking */
+.btn:active {
+    background-color: purple;
+    color: blue;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:yellow;
+}
